@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/cn.ieclipse.pde.explorer.feature_4.0.0.jar" id="cn.ieclipse.pde.explorer.feature" version="4.0.0">
+      <category name="Eclipse Explorer"/>
+   </feature>
+   <feature url="features/cn.ieclipse.pde.explorer.java.feature_1.0.0.jar" id="cn.ieclipse.pde.explorer.java.feature" version="1.0.0">
+      <category name="Eclipse Explorer"/>
+   </feature>
+   <feature url="features/cn.ieclipse.adt.ext.feature_4.0.0.jar" id="cn.ieclipse.adt.ext.feature" version="4.0.0">
+      <category name="ADT-extensions"/>
+   </feature>
+   <feature url="features/cn.ieclipse.pde.signer.feature_1.0.0.jar" id="cn.ieclipse.pde.signer.feature" version="1.0.0">
+      <category name="Jar Signer"/>
+   </feature>
+   <category-def name="ADT-extensions" label="ADT-extensions"/>
+   <category-def name="Eclipse Explorer" label="Eclipse Explorer"/>
+   <category-def name="Jar Signer" label="Jar Signer"/>
+</site>
