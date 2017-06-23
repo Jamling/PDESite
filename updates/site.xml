@@ -6,7 +6,7 @@
    <feature url="features/cn.ieclipse.pde.signer.feature_1.0.1.jar" id="cn.ieclipse.pde.signer.feature" version="1.0.1">
       <category name="Jar Signer"/>
    </feature>
-   <feature url="features/cn.ieclipse.smartqq.feature_1.0.0.201706231604.jar" id="cn.ieclipse.smartqq.feature" version="1.0.0.201706231604">
+   <feature url="features/cn.ieclipse.smartqq.feature_1.0.0.201706231637.jar" id="cn.ieclipse.smartqq.feature" version="1.0.0.201706231637">
       <category name="SmartQQ"/>
    </feature>
    <category-def name="ADT-extensions" label="ADT-extensions"/>
