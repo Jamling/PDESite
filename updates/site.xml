@@ -6,11 +6,11 @@
    <feature url="features/cn.ieclipse.pde.signer.feature_1.0.1.jar" id="cn.ieclipse.pde.signer.feature" version="1.0.1">
       <category name="Jar Signer"/>
    </feature>
-   <feature url="features/cn.ieclipse.smartqq.feature_1.0.3.jar" id="cn.ieclipse.smartqq.feature" version="1.0.3">
-      <category name="SmartQQ"/>
-   </feature>
    <feature url="features/cn.ieclipse.pde.explorer.group.feature_4.1.0.201707041503.jar" id="cn.ieclipse.pde.explorer.group.feature" version="4.1.0.201707041503">
       <category name="Eclipse Explorer"/>
+   </feature>
+   <feature url="features/cn.ieclipse.smartqq.feature_1.0.4.jar" id="cn.ieclipse.smartqq.feature" version="1.0.4">
+      <category name="SmartQQ"/>
    </feature>
    <category-def name="ADT-extensions" label="ADT-extensions"/>
    <category-def name="Jar Signer" label="Jar Signer"/>
