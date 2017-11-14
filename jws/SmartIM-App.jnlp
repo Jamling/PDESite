@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <jnlp
   spec="1.0+"
-  codebase="http://dl.ieclipse.cn/jws"
+  codebase="https://dl.ieclipse.cn/jws"
   href="SmartIM-App.jnlp">
   <information>
     <title>SmartIM</title>
