@@ -14,10 +14,6 @@
    </feature>
    <category-def name="ADT-extensions" label="ADT-extensions"/>
    <category-def name="Jar Signer" label="Jar Signer"/>
-   <category-def name="SmartQQ" label="SmartQQ">
-      <description>
-         聊天插件
-      </description>
-   </category-def>
+   <category-def name="SmartQQ" label="SmartQQ"/>
    <category-def name="Eclipse Explorer" label="Eclipse Explorer"/>
 </site>
