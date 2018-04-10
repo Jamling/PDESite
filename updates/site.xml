@@ -12,7 +12,7 @@
    <feature url="features/cn.ieclipse.pde.explorer.group.feature_4.1.0.201804091552.jar" id="cn.ieclipse.pde.explorer.group.feature" version="4.1.0.201804091552">
       <category name="Eclipse Explorer"/>
    </feature>
-   <feature url="features/cn.ieclipse.smartqq.feature_3.1.4.201804101611.jar" id="cn.ieclipse.smartqq.feature" version="3.1.4.201804101611">
+   <feature url="features/cn.ieclipse.smartqq.feature_3.1.4.201804101624.jar" id="cn.ieclipse.smartqq.feature" version="3.1.4.201804101624">
       <category name="SmartQQ"/>
    </feature>
    <category-def name="ADT-extensions" label="ADT-extensions"/>
