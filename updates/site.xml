@@ -9,10 +9,10 @@
    <feature url="features/cn.ieclipse.pde.signer.feature_1.0.1.201804091552.jar" id="cn.ieclipse.pde.signer.feature" version="1.0.1.201804091552">
       <category name="Jar Signer"/>
    </feature>
-   <feature url="features/cn.ieclipse.pde.explorer.group.feature_4.1.0.201804091552.jar" id="cn.ieclipse.pde.explorer.group.feature" version="4.1.0.201804091552">
+   <feature url="features/cn.ieclipse.pde.explorer.group.feature_4.1.1.201805140951.jar" id="cn.ieclipse.pde.explorer.group.feature" version="4.1.1.201805140951">
       <category name="Eclipse Explorer"/>
    </feature>
-   <feature url="features/cn.ieclipse.smartqq.feature_3.1.4.201804101624.jar" id="cn.ieclipse.smartqq.feature" version="3.1.4.201804101624">
+   <feature url="features/cn.ieclipse.smartqq.feature_3.2.0.201805140951.jar" id="cn.ieclipse.smartqq.feature" version="3.2.0.201805140951">
       <category name="SmartQQ"/>
    </feature>
    <category-def name="ADT-extensions" label="ADT-extensions"/>
