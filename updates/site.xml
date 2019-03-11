@@ -12,11 +12,11 @@
    <feature url="features/cn.ieclipse.pde.explorer.group.feature_4.1.1.201805140951.jar" id="cn.ieclipse.pde.explorer.group.feature" version="4.1.1.201805140951">
       <category name="Eclipse Explorer"/>
    </feature>
-   <feature url="features/cn.ieclipse.smartqq.feature_3.3.0.201902251418.jar" id="cn.ieclipse.smartqq.feature" version="3.3.0.201902251418">
-      <category name="SmartQQ"/>
+   <feature url="features/cn.ieclipse.smartqq.feature_3.4.0.201903111411.jar" id="cn.ieclipse.smartqq.feature" version="3.4.0.201903111411">
+      <category name="SmartIM"/>
    </feature>
    <category-def name="ADT-extensions" label="ADT-extensions"/>
    <category-def name="Jar Signer" label="Jar Signer"/>
-   <category-def name="SmartQQ" label="SmartQQ"/>
+   <category-def name="SmartIM" label="SmartIM"/>
    <category-def name="Eclipse Explorer" label="Eclipse Explorer"/>
 </site>
