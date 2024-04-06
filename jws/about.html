@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="//cdn.bootcss.com/jquery/2.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <title>About SmartIM</title>
+    <style type="text/css">
+        body {
+            font-size: 16px;
+        }
+
+        .hl {
+            color: #ff0000;
+            font-size: 1.5em
+        }
+
+        div > ul > li {
+            margin-top: .5em;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            $.ajax({
+                url: './SmartIM-App.jnlp', // 指定XML文件的路径
+                type: 'GET',
+                dataType: 'xml', // 指定返回的数据类型为XML
+                success: function(xml) {
+                    
+                    var xmlDoc = xml;
+                    console.log(xmlDoc);
+                    // 查询元素
+                    var jnlp = xmlDoc.getElementsByTagName('jnlp')[0];
+                    var version = jnlp.getElementsByTagName('version')[0].textContent;
+                    var jar = jnlp.getElementsByTagName("resources").item(0).getElementsByTagName("jar").item(0);
+                    var codebase = jnlp.getAttribute('codebase');
+                    var href = jar.getAttribute("href");
+                    var link = `${codebase}/${href}`;
+                    console.log(link);
+                    $('#swing_link').attr('href', link)
+                    $('#swing_badge').attr('src', 'https://img.shields.io/badge/Swing-' + version + '-blue.svg');
+                    $('#swing_notes').html('');
+                },
+                error: function(xhr, status, error) {
+                    // 这里是加载XML失败后的回调函数
+                    console.error("Error loading XML:", status, error);
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+<div class="container">
+    <div class="panel panel">
+        <div class="panel-body">
+            SmartIM是一个专为程序员设计的聊天工具，利用已有的QQ、微信等协议，在IDE、Linux等冷门环境下也可以即时沟通。<br/>
+            目前有三个版本<br/>
+            <ul>
+                <li><a href="https://jamling.github.com/jws">SmartIM Swing</a>: SmartIM的Swing客户端，体积仅2M，无需安装，只要电脑中装有Java即可运行，适用于在Linux环境。</li>
+                <li><a href="https://github.com/Jamling/SmartIM4Eclipse">SmartIM4Eclipse</a>:
+                    SmartIM的Eclipse插件，支持所有的Eclipse IDE，可以在eclipse中即时交流代码问题
+                </li>
+                <li><a href="https://github.com/Jamling/SmartIM4IntelliJ">SmartIM4IntelliJ</a>:
+                    SmartIM的IntelliJ插件，支持所有的IntelliJ的产品，比如Idea, Android Studio, PHP Storm等，除了基本的聊天功能，还支持发送代码位置，添加代码评审功能。
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="panel panel">
+        <div class="panel-body">
+            <h3>最新版本
+                <small></small>
+            </h3>
+            <h4>SmartIM4Eclipse</h4>
+            <div>
+                <a href="https://marketplace.eclipse.org/content/smartqq">
+                    <img
+                            src="https://img.shields.io/eclipse-marketplace/v/SmartIM.svg?maxAge=3600"
+                            alt="eclipse marketplace release"></a>
+                <a
+                        href="https://github.com/Jamling/SmartIM4Eclipse/releases">
+                    <img
+                            src="https://img.shields.io/github/release/jamling/SmartIM4Eclipse.svg?maxAge=3600"
+                            alt="Github Release"></a>
+            </div>
+            <div id="eclipse_notes">
+
+            </div>
+            <h4>SmartIM4IntelliJ</h4>
+            <div>
+                <a href="https://plugins.jetbrains.com/plugin/9816-smartqq">
+                    <img
+                            src="https://img.shields.io/jetbrains/plugin/v/9816-smartqq.svg"
+                            alt="jetbrains plugins"></a>
+                <a
+                        href="https://github.com/Jamling/SmartIM4IntelliJ/releases">
+                    <img
+                            src="https://img.shields.io/github/release/jamling/SmartIM4IntelliJ.svg?maxAge=3600"
+                            alt="Github Release"></a>
+            </div>
+            <div id="intellij_notes">
+
+            </div>
+            <h4>SmartIM（Swing）</h4>
+            <div>
+                <a id="swing_link" href="https://dl.ieclipse.cn/jws/SmartIM-App.jar">
+                    <img id="swing_badge"
+                         src="https://img.shields.io/badge/Swing-unknown-lightgray.svg"
+                         alt="Swing release"></a>
+                <a
+                        href="https://github.com/Jamling/SmartIM/releases">
+                    <img
+                            src="https://img.shields.io/github/release/jamling/SmartIM.svg?maxAge=3600"
+                            alt="Github Release"></a>
+            </div>
+            <div id="swing_notes">
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
